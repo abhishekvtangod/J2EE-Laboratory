@@ -1,0 +1,16 @@
+INDEX VERSION 1.4+/home/abhi/projects/java-workspace/j2ee/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+330381380.index
+4270078762.index
+463824283.index
+902694369.index
+2775652464.index
+1280717709.index
+340871140.index
+1592549745.index
+1120482679.index
+3530959078.index
+3686819021.index
+2910810355.index
+2192323617.index
+1822577933.index
+2898744411.index

@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1 class="code-line" data-line-start=0 data-line-end=1 ><a id="WarehouseStockManagementBackend_0"></a>WarehouseStockManagementBackend</h1>
+	<h2 class="code-line" data-line-start=2 data-line-end=3 ><a id="API_endpoints_2"></a>API endpoints:</h2>
+	<h2 class="code-line" data-line-start=5 data-line-end=7 ><a id="Show_Warehouses_5"></a><strong>Show Warehouses</strong></h2>
+	<p class="has-line-data" data-line-start="7" data-line-end="8">Returns json data of all Warehouses.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="9" data-line-end="13">
+	<p class="has-line-data" data-line-start="9" data-line-end="10"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="11" data-line-end="12">/WarehouseStocksManagementAPI/Warehouse</p>
+	</li>
+	<li class="has-line-data" data-line-start="13" data-line-end="17">
+	<p class="has-line-data" data-line-start="13" data-line-end="14"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="15" data-line-end="16"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="17" data-line-end="21">
+	<p class="has-line-data" data-line-start="17" data-line-end="18"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="19" data-line-end="20">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="21" data-line-end="25">
+	<p class="has-line-data" data-line-start="21" data-line-end="22"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="23" data-line-end="24">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="25" data-line-end="38">
+	<p class="has-line-data" data-line-start="25" data-line-end="26"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="27" data-line-end="29"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="30" data-line-end="38" class="language-json">[{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}]
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="38" data-line-end="43">
+	<p class="has-line-data" data-line-start="38" data-line-end="39"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="40" data-line-end="43"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=45 data-line-end=47 ><a id="Show_Employees_45"></a><strong>Show Employees</strong></h2>
+	<p class="has-line-data" data-line-start="47" data-line-end="48">Returns json data of all Employees.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="49" data-line-end="53">
+	<p class="has-line-data" data-line-start="49" data-line-end="50"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="51" data-line-end="52">/WarehouseStocksManagementAPI/Employee</p>
+	</li>
+	<li class="has-line-data" data-line-start="53" data-line-end="57">
+	<p class="has-line-data" data-line-start="53" data-line-end="54"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="55" data-line-end="56"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="57" data-line-end="61">
+	<p class="has-line-data" data-line-start="57" data-line-end="58"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="59" data-line-end="60">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="61" data-line-end="65">
+	<p class="has-line-data" data-line-start="61" data-line-end="62"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="63" data-line-end="64">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="65" data-line-end="79">
+	<p class="has-line-data" data-line-start="65" data-line-end="66"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="67" data-line-end="69"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="70" data-line-end="79" class="language-json">  [{
+	     "<span class="hljs-attribute">empid</span>":<span class="hljs-value"><span class="hljs-number">72</span></span>,
+	     "<span class="hljs-attribute">emp_name</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">emp_shift</span>":<span class="hljs-value"><span class="hljs-string">"M"</span></span>,
+	     "<span class="hljs-attribute">emp_sal</span>": <span class="hljs-value"><span class="hljs-number">9000</span></span>,
+	     "<span class="hljs-attribute">wid</span>": <span class="hljs-value"><span class="hljs-number">5</span>
+	  </span>}]
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="79" data-line-end="84">
+	<p class="has-line-data" data-line-start="79" data-line-end="80"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="81" data-line-end="84"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=94 data-line-end=96 ><a id="Show_Vehicles_94"></a><strong>Show Vehicles</strong></h2>
+	<p class="has-line-data" data-line-start="96" data-line-end="97">Returns json data of all Vehicles.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="98" data-line-end="102">
+	<p class="has-line-data" data-line-start="98" data-line-end="99"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="100" data-line-end="101">/WarehouseStocksManagementAPI/Vehicle</p>
+	</li>
+	<li class="has-line-data" data-line-start="102" data-line-end="106">
+	<p class="has-line-data" data-line-start="102" data-line-end="103"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="104" data-line-end="105"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="106" data-line-end="110">
+	<p class="has-line-data" data-line-start="106" data-line-end="107"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="108" data-line-end="109">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="110" data-line-end="114">
+	<p class="has-line-data" data-line-start="110" data-line-end="111"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="112" data-line-end="113">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="114" data-line-end="127">
+	<p class="has-line-data" data-line-start="114" data-line-end="115"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="116" data-line-end="118"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="119" data-line-end="127" class="language-json">  [{
+	     "<span class="hljs-attribute">in_wh</span>":<span class="hljs-value"><span class="hljs-number">5</span></span>,
+	     "<span class="hljs-attribute">reg_num</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">model</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">type</span>": <span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">last_maintainence</span>": <span class="hljs-value"><span class="hljs-string">"2020-05-09"</span>
+	  </span>}]
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="127" data-line-end="132">
+	<p class="has-line-data" data-line-start="127" data-line-end="128"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="129" data-line-end="132"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=140 data-line-end=142 ><a id="Show_Logistics_140"></a><strong>Show Logistics</strong></h2>
+	<p class="has-line-data" data-line-start="142" data-line-end="143">Returns json data of all Logistics.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="144" data-line-end="148">
+	<p class="has-line-data" data-line-start="144" data-line-end="145"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="146" data-line-end="147">/WarehouseStocksManagementAPI/Logistics</p>
+	</li>
+	<li class="has-line-data" data-line-start="148" data-line-end="152">
+	<p class="has-line-data" data-line-start="148" data-line-end="149"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="150" data-line-end="151"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="152" data-line-end="156">
+	<p class="has-line-data" data-line-start="152" data-line-end="153"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="154" data-line-end="155">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="156" data-line-end="160">
+	<p class="has-line-data" data-line-start="156" data-line-end="157"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="158" data-line-end="159">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="160" data-line-end="175">
+	<p class="has-line-data" data-line-start="160" data-line-end="161"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="162" data-line-end="164"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="165" data-line-end="175" class="language-json">  [{
+	     "<span class="hljs-attribute">logistics_id</span>":<span class="hljs-value"><span class="hljs-number">1</span></span>,
+	     "<span class="hljs-attribute">start_addr</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">end_addr</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">dispatch_datetime</span>": <span class="hljs-value"><span class="hljs-string">"2020-12-16 18:00:01"</span></span>,
+	     "<span class="hljs-attribute">receive_datetime</span>": <span class="hljs-value"><span class="hljs-string">"2020-12-16 18:00:01"</span></span>,
+	     "<span class="hljs-attribute">vehicle</span>": <span class="hljs-value"><span class="hljs-string">"vinod"</span>
+	  </span>}]
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="175" data-line-end="180">
+	<p class="has-line-data" data-line-start="175" data-line-end="176"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="177" data-line-end="180"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=190 data-line-end=192 ><a id="Show_Consumers_190"></a><strong>Show Consumers</strong></h2>
+	<p class="has-line-data" data-line-start="192" data-line-end="193">Returns json data of all Consumers.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="194" data-line-end="198">
+	<p class="has-line-data" data-line-start="194" data-line-end="195"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="196" data-line-end="197">/WarehouseStocksManagementAPI/Consumer</p>
+	</li>
+	<li class="has-line-data" data-line-start="198" data-line-end="202">
+	<p class="has-line-data" data-line-start="198" data-line-end="199"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="200" data-line-end="201"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="202" data-line-end="206">
+	<p class="has-line-data" data-line-start="202" data-line-end="203"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="204" data-line-end="205">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="206" data-line-end="210">
+	<p class="has-line-data" data-line-start="206" data-line-end="207"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="208" data-line-end="209">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="210" data-line-end="223">
+	<p class="has-line-data" data-line-start="210" data-line-end="211"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="212" data-line-end="214"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="215" data-line-end="223" class="language-json">[{
+	 "<span class="hljs-attribute">consumer_id</span>":<span class="hljs-value"><span class="hljs-number">1</span></span>,
+	 "<span class="hljs-attribute">consumer_name</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	 "<span class="hljs-attribute">phone</span>":<span class="hljs-value"><span class="hljs-string">"54645"</span></span>,
+	 "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"abhi"</span>
+	</span>}]
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="223" data-line-end="228">
+	<p class="has-line-data" data-line-start="223" data-line-end="224"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="225" data-line-end="228"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=238 data-line-end=240 ><a id="Show_Suppliers_238"></a><strong>Show Suppliers</strong></h2>
+	<p class="has-line-data" data-line-start="240" data-line-end="241">Returns json data of all Suppliers.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="242" data-line-end="246">
+	<p class="has-line-data" data-line-start="242" data-line-end="243"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="244" data-line-end="245">/WarehouseStocksManagementAPI/Supplier</p>
+	</li>
+	<li class="has-line-data" data-line-start="246" data-line-end="250">
+	<p class="has-line-data" data-line-start="246" data-line-end="247"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="248" data-line-end="249"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="250" data-line-end="254">
+	<p class="has-line-data" data-line-start="250" data-line-end="251"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="252" data-line-end="253">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="254" data-line-end="258">
+	<p class="has-line-data" data-line-start="254" data-line-end="255"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="256" data-line-end="257">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="258" data-line-end="272">
+	<p class="has-line-data" data-line-start="258" data-line-end="259"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="260" data-line-end="262"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="263" data-line-end="272" class="language-json">  [{
+	     "<span class="hljs-attribute">supplier_id</span>":<span class="hljs-value"><span class="hljs-number">1</span></span>,
+	     "<span class="hljs-attribute">supplier_name</span>":<span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	     "<span class="hljs-attribute">phone</span>":<span class="hljs-value"><span class="hljs-string">"54645"</span></span>,
+	     "<span class="hljs-attribute">email</span>": <span class="hljs-value"><span class="hljs-string">"abhi"</span>
+	  </span>}]
+	
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="272" data-line-end="277">
+	<p class="has-line-data" data-line-start="272" data-line-end="273"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="274" data-line-end="277"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=285 data-line-end=287 ><a id="Show_Goods_285"></a><strong>Show Goods</strong></h2>
+	<p class="has-line-data" data-line-start="287" data-line-end="288">Returns json data of all Goods.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="289" data-line-end="293">
+	<p class="has-line-data" data-line-start="289" data-line-end="290"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="291" data-line-end="292">/WarehouseStocksManagementAPI/Goods</p>
+	</li>
+	<li class="has-line-data" data-line-start="293" data-line-end="297">
+	<p class="has-line-data" data-line-start="293" data-line-end="294"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="295" data-line-end="296"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="297" data-line-end="301">
+	<p class="has-line-data" data-line-start="297" data-line-end="298"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="299" data-line-end="300">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="301" data-line-end="305">
+	<p class="has-line-data" data-line-start="301" data-line-end="302"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="303" data-line-end="304">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="305" data-line-end="328">
+	<p class="has-line-data" data-line-start="305" data-line-end="306"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="307" data-line-end="309"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="310" data-line-end="328" class="language-json">  [{
+	   "<span class="hljs-attribute">goods_id</span>": <span class="hljs-value"><span class="hljs-number">3</span></span>,
+	   "<span class="hljs-attribute">is_sensitive</span>": <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	   "<span class="hljs-attribute">storage</span>": <span class="hljs-value"><span class="hljs-number">14</span></span>,
+	   "<span class="hljs-attribute">weight</span>": <span class="hljs-value"><span class="hljs-number">200</span></span>,
+	   "<span class="hljs-attribute">cost</span>": <span class="hljs-value"><span class="hljs-number">2990</span></span>,
+	   "<span class="hljs-attribute">arrival</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+	   "<span class="hljs-attribute">supplier</span>":<span class="hljs-value"><span class="hljs-number">6</span></span>,
+	   "<span class="hljs-attribute">departure</span>": <span class="hljs-value"><span class="hljs-number">122</span></span>,
+	   "<span class="hljs-attribute">consumer</span>": <span class="hljs-value"><span class="hljs-number">0</span></span>,
+	   "<span class="hljs-attribute">goods_name</span>": <span class="hljs-value"><span class="hljs-string">"abhi"</span></span>,
+	   "<span class="hljs-attribute">category</span>": <span class="hljs-value"><span class="hljs-string">"Other"</span></span>,
+	   "<span class="hljs-attribute">wid</span>": <span class="hljs-value"><span class="hljs-number">5</span></span>,
+	   "<span class="hljs-attribute">bin</span>":<span class="hljs-value"><span class="hljs-number">1</span>
+	  </span>}]
+	
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="328" data-line-end="333">
+	<p class="has-line-data" data-line-start="328" data-line-end="329"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="330" data-line-end="333"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=336 data-line-end=338 ><a id="Show_Category_336"></a><strong>Show Category</strong></h2>
+	<p class="has-line-data" data-line-start="338" data-line-end="339">Returns json data of all Goods.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="340" data-line-end="344">
+	<p class="has-line-data" data-line-start="340" data-line-end="341"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="342" data-line-end="343">/WarehouseStocksManagementAPI/Category</p>
+	</li>
+	<li class="has-line-data" data-line-start="344" data-line-end="348">
+	<p class="has-line-data" data-line-start="344" data-line-end="345"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="346" data-line-end="347"><code>GET</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="348" data-line-end="352">
+	<p class="has-line-data" data-line-start="348" data-line-end="349"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="350" data-line-end="351">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="352" data-line-end="356">
+	<p class="has-line-data" data-line-start="352" data-line-end="353"><strong>Data Params</strong></p>
+	<p class="has-line-data" data-line-start="354" data-line-end="355">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="356" data-line-end="366">
+	<p class="has-line-data" data-line-start="356" data-line-end="357"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="358" data-line-end="360"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="361" data-line-end="366" class="language-json">  [{
+	   "<span class="hljs-attribute">category_name</span>": <span class="hljs-value"><span class="hljs-string">"abhi"</span>
+	  </span>}]
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="366" data-line-end="371">
+	<p class="has-line-data" data-line-start="366" data-line-end="367"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="368" data-line-end="371"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><br>
+	None</li>
+	</ul>
+	</li>
+	</ul>
+	<hr>
+	<h2 class="code-line" data-line-start=376 data-line-end=378 ><a id="Insert_Warehouses_376"></a><strong>Insert Warehouses</strong></h2>
+	<p class="has-line-data" data-line-start="378" data-line-end="379">Inserts data of a particular new Warehouse into Warehouse table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="380" data-line-end="384">
+	<p class="has-line-data" data-line-start="380" data-line-end="381"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="382" data-line-end="383">/WarehouseStocksManagementAPI/Warehouse</p>
+	</li>
+	<li class="has-line-data" data-line-start="384" data-line-end="388">
+	<p class="has-line-data" data-line-start="384" data-line-end="385"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="386" data-line-end="387"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="388" data-line-end="392">
+	<p class="has-line-data" data-line-start="388" data-line-end="389"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="390" data-line-end="391">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="392" data-line-end="404">
+	<p class="has-line-data" data-line-start="392" data-line-end="393"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="395" data-line-end="403" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="404" data-line-end="416">
+	<p class="has-line-data" data-line-start="404" data-line-end="405"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="406" data-line-end="409"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="410" data-line-end="415" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="416" data-line-end="427">
+	<p class="has-line-data" data-line-start="416" data-line-end="417"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="418" data-line-end="421"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="422" data-line-end="427" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=431 data-line-end=433 ><a id="Insert_Employees_431"></a><strong>Insert Employees</strong></h2>
+	<p class="has-line-data" data-line-start="433" data-line-end="434">Inserts data of a particular new Employee into Employee table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="435" data-line-end="439">
+	<p class="has-line-data" data-line-start="435" data-line-end="436"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="437" data-line-end="438">/WarehouseStocksManagementAPI/Employee</p>
+	</li>
+	<li class="has-line-data" data-line-start="439" data-line-end="443">
+	<p class="has-line-data" data-line-start="439" data-line-end="440"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="441" data-line-end="442"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="443" data-line-end="447">
+	<p class="has-line-data" data-line-start="443" data-line-end="444"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="445" data-line-end="446">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="447" data-line-end="459">
+	<p class="has-line-data" data-line-start="447" data-line-end="448"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="450" data-line-end="458" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="459" data-line-end="470">
+	<p class="has-line-data" data-line-start="459" data-line-end="460"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="461" data-line-end="464"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="465" data-line-end="470" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="473" data-line-end="484">
+	<p class="has-line-data" data-line-start="473" data-line-end="474"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="475" data-line-end="478"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="479" data-line-end="484" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=494 data-line-end=496 ><a id="Insert_Vehicles_494"></a><strong>Insert Vehicles</strong></h2>
+	<p class="has-line-data" data-line-start="496" data-line-end="497">Inserts data of a particular new Vehicle into Vehicles table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="498" data-line-end="502">
+	<p class="has-line-data" data-line-start="498" data-line-end="499"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="500" data-line-end="501">/WarehouseStocksManagementAPI/Vehicle</p>
+	</li>
+	<li class="has-line-data" data-line-start="502" data-line-end="506">
+	<p class="has-line-data" data-line-start="502" data-line-end="503"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="504" data-line-end="505"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="506" data-line-end="510">
+	<p class="has-line-data" data-line-start="506" data-line-end="507"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="508" data-line-end="509">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="510" data-line-end="522">
+	<p class="has-line-data" data-line-start="510" data-line-end="511"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="513" data-line-end="521" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="522" data-line-end="533">
+	<p class="has-line-data" data-line-start="522" data-line-end="523"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="524" data-line-end="527"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="528" data-line-end="533" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="535" data-line-end="546">
+	<p class="has-line-data" data-line-start="535" data-line-end="536"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="537" data-line-end="540"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="541" data-line-end="546" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=556 data-line-end=558 ><a id="Insert_Logistics_556"></a><strong>Insert Logistics</strong></h2>
+	<p class="has-line-data" data-line-start="558" data-line-end="559">Inserts data of a particular new Logistics into Logistics table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="561" data-line-end="565">
+	<p class="has-line-data" data-line-start="561" data-line-end="562"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="563" data-line-end="564">/WarehouseStocksManagementAPI/Logistics</p>
+	</li>
+	<li class="has-line-data" data-line-start="565" data-line-end="569">
+	<p class="has-line-data" data-line-start="565" data-line-end="566"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="567" data-line-end="568"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="569" data-line-end="573">
+	<p class="has-line-data" data-line-start="569" data-line-end="570"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="571" data-line-end="572">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="573" data-line-end="584">
+	<p class="has-line-data" data-line-start="573" data-line-end="574"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="576" data-line-end="584" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="586" data-line-end="597">
+	<p class="has-line-data" data-line-start="586" data-line-end="587"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="588" data-line-end="591"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="592" data-line-end="597" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="599" data-line-end="610">
+	<p class="has-line-data" data-line-start="599" data-line-end="600"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="601" data-line-end="604"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="605" data-line-end="610" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=621 data-line-end=623 ><a id="Insert_Consumers_621"></a><strong>Insert Consumers</strong></h2>
+	<p class="has-line-data" data-line-start="623" data-line-end="624">Inserts data of a particular new Consumer into Consumer table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="625" data-line-end="629">
+	<p class="has-line-data" data-line-start="625" data-line-end="626"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="627" data-line-end="628">/WarehouseStocksManagementAPI/Consumer</p>
+	</li>
+	<li class="has-line-data" data-line-start="629" data-line-end="633">
+	<p class="has-line-data" data-line-start="629" data-line-end="630"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="631" data-line-end="632"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="633" data-line-end="637">
+	<p class="has-line-data" data-line-start="633" data-line-end="634"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="635" data-line-end="636">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="637" data-line-end="649">
+	<p class="has-line-data" data-line-start="637" data-line-end="638"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="640" data-line-end="648" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="649" data-line-end="660">
+	<p class="has-line-data" data-line-start="649" data-line-end="650"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="651" data-line-end="654"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="655" data-line-end="660" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="662" data-line-end="673">
+	<p class="has-line-data" data-line-start="662" data-line-end="663"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="664" data-line-end="667"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="668" data-line-end="673" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=685 data-line-end=687 ><a id="Insert_Suppliers_685"></a><strong>Insert Suppliers</strong></h2>
+	<p class="has-line-data" data-line-start="687" data-line-end="688">Inserts data of a particular new Supplier into Supplier table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="689" data-line-end="693">
+	<p class="has-line-data" data-line-start="689" data-line-end="690"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="691" data-line-end="692">/WarehouseStocksManagementAPI/Supplier</p>
+	</li>
+	<li class="has-line-data" data-line-start="693" data-line-end="697">
+	<p class="has-line-data" data-line-start="693" data-line-end="694"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="695" data-line-end="696"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="697" data-line-end="701">
+	<p class="has-line-data" data-line-start="697" data-line-end="698"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="699" data-line-end="700">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="701" data-line-end="713">
+	<p class="has-line-data" data-line-start="701" data-line-end="702"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="704" data-line-end="712" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="713" data-line-end="724">
+	<p class="has-line-data" data-line-start="713" data-line-end="714"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="715" data-line-end="718"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="719" data-line-end="724" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="726" data-line-end="737">
+	<p class="has-line-data" data-line-start="726" data-line-end="727"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="728" data-line-end="731"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="732" data-line-end="737" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=747 data-line-end=749 ><a id="Insert_Goods_747"></a><strong>Insert Goods</strong></h2>
+	<p class="has-line-data" data-line-start="749" data-line-end="750">Inserts data of a particular new Goods into Goods table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="751" data-line-end="755">
+	<p class="has-line-data" data-line-start="751" data-line-end="752"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="753" data-line-end="754">/WarehouseStocksManagementAPI/Goods</p>
+	</li>
+	<li class="has-line-data" data-line-start="755" data-line-end="759">
+	<p class="has-line-data" data-line-start="755" data-line-end="756"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="757" data-line-end="758"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="759" data-line-end="763">
+	<p class="has-line-data" data-line-start="759" data-line-end="760"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="761" data-line-end="762">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="763" data-line-end="775">
+	<p class="has-line-data" data-line-start="763" data-line-end="764"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="766" data-line-end="774" class="language-json">{
+	  "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	  "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	  "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	  "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	  "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	</span>}
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="775" data-line-end="786">
+	<p class="has-line-data" data-line-start="775" data-line-end="776"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="777" data-line-end="780"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="781" data-line-end="786" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="788" data-line-end="799">
+	<p class="has-line-data" data-line-start="788" data-line-end="789"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="790" data-line-end="793"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="794" data-line-end="799" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<h2 class="code-line" data-line-start=804 data-line-end=806 ><a id="Insert_Category_804"></a><strong>Insert Category</strong></h2>
+	<p class="has-line-data" data-line-start="806" data-line-end="807">Inserts data of a particular new Category into Category table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="809" data-line-end="813">
+	<p class="has-line-data" data-line-start="809" data-line-end="810"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="811" data-line-end="812">/WarehouseStocksManagementAPI/Category</p>
+	</li>
+	<li class="has-line-data" data-line-start="813" data-line-end="817">
+	<p class="has-line-data" data-line-start="813" data-line-end="814"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="815" data-line-end="816"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="817" data-line-end="821">
+	<p class="has-line-data" data-line-start="817" data-line-end="818"><strong>URL Params</strong></p>
+	<p class="has-line-data" data-line-start="819" data-line-end="820">None</p>
+	</li>
+	<li class="has-line-data" data-line-start="821" data-line-end="823">
+	<p class="has-line-data" data-line-start="821" data-line-end="822"><strong>Data Params</strong></p>
+	</li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="824" data-line-end="832" class="language-json">  {
+	    "<span class="hljs-attribute">Wid</span>" : <span class="hljs-value"><span class="hljs-number">1682</span></span>,
+	    "<span class="hljs-attribute">is_functional</span>" : <span class="hljs-value"><span class="hljs-number">1</span></span>,
+	    "<span class="hljs-attribute">company</span>":<span class="hljs-value"><span class="hljs-string">"NearoAI"</span></span>, 
+	    "<span class="hljs-attribute">address</span>":<span class="hljs-value"><span class="hljs-string">"MSRIT Bangalore"</span></span>,
+	    "<span class="hljs-attribute">supervisor_id</span>" : <span class="hljs-value"><span class="hljs-number">11</span>
+	  </span>}
+	</code></pre>
+	<ul>
+	<li class="has-line-data" data-line-start="832" data-line-end="843">
+	<p class="has-line-data" data-line-start="832" data-line-end="833"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="834" data-line-end="837"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="838" data-line-end="843" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"inserted successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<ul>
+	<li class="has-line-data" data-line-start="845" data-line-end="856">
+	<p class="has-line-data" data-line-start="845" data-line-end="846"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="847" data-line-end="850"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="851" data-line-end="856" class="language-json">  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Insertion failed"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	<hr>
+	<h2 class="code-line" data-line-start=863 data-line-end=865 ><a id="Update_Database_Data_863"></a><strong>Update Database Data</strong></h2>
+	<p class="has-line-data" data-line-start="865" data-line-end="866">Updates data of a particular table in the database.</p>
+	<ul>
+	<li class="has-line-data" data-line-start="867" data-line-end="871">
+	<p class="has-line-data" data-line-start="867" data-line-end="868"><strong>URL</strong></p>
+	<p class="has-line-data" data-line-start="869" data-line-end="870">/WarehouseStocksManagementAPI/Category</p>
+	</li>
+	<li class="has-line-data" data-line-start="871" data-line-end="875">
+	<p class="has-line-data" data-line-start="871" data-line-end="872"><strong>Method:</strong></p>
+	<p class="has-line-data" data-line-start="873" data-line-end="874"><code>POST</code></p>
+	</li>
+	<li class="has-line-data" data-line-start="875" data-line-end="885">
+	<p class="has-line-data" data-line-start="875" data-line-end="876"><strong>Data Params</strong></p>
+	<pre><code class="has-line-data" data-line-start="878" data-line-end="884" class="language-json">
+	  {
+	     "<span class="hljs-attribute">query</span>": <span class="hljs-value"><span class="hljs-string">" UPDATE `DBMS_Project`.`Employee` SET `wid` = '5' WHERE (`empid` = '2')"</span>
+	  </span>}
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="885" data-line-end="896">
+	<p class="has-line-data" data-line-start="885" data-line-end="886"><strong>Success Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="887" data-line-end="889"><strong>Code:</strong> 200 &lt;br /&gt;<br>
+	<strong>Content:</strong></li>
+	</ul>
+	<pre><code class="has-line-data" data-line-start="890" data-line-end="896" class="language-json">  
+	  { 
+	      "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Query Processed successfully"</span> 
+	  </span>}
+	
+	</code></pre>
+	</li>
+	<li class="has-line-data" data-line-start="896" data-line-end="907">
+	<p class="has-line-data" data-line-start="896" data-line-end="897"><strong>Error Response:</strong></p>
+	<ul>
+	<li class="has-line-data" data-line-start="898" data-line-end="907"><strong>Code:</strong> 404  &lt;br /&gt;<br>
+	<strong>Content:</strong><pre><code class="has-line-data" data-line-start="901" data-line-end="907" class="language-json">
+	{ 
+	    "<span class="hljs-attribute">Result</span>": <span class="hljs-value"><span class="hljs-string">"Query failed"</span> 
+	</span>}
+	
+	</code></pre>
+	</li>
+	</ul>
+	</li>
+	</ul>
+	
+	
+
+
+</body>
+</html>
